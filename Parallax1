@@ -5,10 +5,10 @@
 <style>
 .parallax {
   /* The image used */
-  background-image: url("img_parallax.jpg");
+  background-image: url('https://drive.google.com/thumbnail?id=1wCEeqf6j4S_WTOwF8TXk4u10djI0xCik');
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 700px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -20,22 +20,13 @@
 </head>
 <body>
 
-<p>Their explosive live shows bring to life a collection of powerful songs like "Night Drive," "Heartbreaker," "Break the Chains," and "Lost in the Lights" — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an extraordinarily memorable experience you can’t help but feel. If you crave that authentic, electrifying rock ‘n’ roll spirit, Stage Fright delivers it with a force that keeps fans coming back for more.</div>
-</div>
-</p>
-
+<!-- Parallax section -->
 <div class="parallax"></div>
 
-<div style="height:1000px;background-color:red;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<!-- Content section with white text -->
+<div style="height:1000px;background-color:#00296b;color:white;font-size:36px; padding: 20px">
+  Their explosive live shows bring to life a collection of powerful songs like "Night Drive," "Heartbreaker," "Break the Chains," and "Lost in the Lights" — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an extraordinarily memorable experience you can’t help but feel. If you crave that authentic, electrifying rock ‘n’ roll spirit, Stage Fright delivers it with a force that keeps fans coming back for more.
 </div>
 
 </body>
 </html>
-
-
-
-
-
