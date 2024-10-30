@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+#tours {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tours td, #tours th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tours tr:nth-child(even){background-color: #f2f2f2;}
+
+#tours tr:hover {background-color: #ddd;}
+
+#tours th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00008B;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Stage Fright: The Fearless Tour 2025</h1>
+
+<table id="tours">
+  <tr>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Venue</th>
+  </tr>
+  <tr>
+    <td>January 12, 2025</td>
+    <td>Chicago, IL</td>
+    <td>United Center</td>
+  </tr>
+  <tr>
+    <td>January 18, 2025</td>
+    <td>New York, NY</td>
+    <td>Madison Square Garden</td>
+  </tr>
+  <tr>
+    <td>January 25, 2025</td>
+    <td>Boston, MA</td>
+    <td>TD Garden</td>
+  </tr>
+  <tr>
+    <td>February 2, 2025</td>
+    <td>Atlanta, GA</td>
+    <td>State Farm Arena</td>
+  </tr>
+  <tr>
+    <td>February 9, 2025</td>
+    <td>Dallas, TX</td>
+    <td>American Airlines Center</td>
+  </tr>
+  <tr>
+    <td>February 15, 2025</td>
+    <td>Los Angeles, CA</td>
+    <td>The Forum</td>
+  </tr>
+  <tr>
+    <td>February 22, 2025</td>
+    <td>Seattle, WA</td>
+    <td>Climate Pledge Arena</td>
+  </tr>
+  <tr>
+    <td>March 1, 2025</td>
+    <td>Denver, CO</td>
+    <td>Ball Arena</td>
+  </tr>
+  <tr>
+    <td>March 8, 2025</td>
+    <td>Las Vegas, NV</td>
+    <td>T-Mobile Arena</td>
+  </tr>
+  <tr>
+    <td>March 15, 2025</td>
+    <td>Miami, FL</td>
+    <td>Kaseya Center</td>
+  </tr>
+</table>
+
+</body>
+</html>
