@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 .parallax {
   /* The image used */
-  background-image: url('https://drive.google.com/thumbnail?id=1wCEeqf6j4S_WTOwF8TXk4u10djI0xCik');
+  background-image: url('https://imgur.com/X7qV5Q3.png');
 
   /* Set a specific height */
   min-height: 535px;
