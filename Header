@@ -9,5 +9,96 @@
 <body>
   <img src="https://i.postimg.cc/SKsqZK5z/Stage-Freight-Banner.png" class="img-fluid" width="5000" alt="...">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main container styling */
+        .container {
+            text-align: center;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header styling */
+        h1 {
+            font-family: 'Impact', sans-serif;
+            font-size: 3em;
+            color: #d91e18;
+            margin: 0.2em 0;
+            text-shadow: 1px 1px #999;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+            color: #444;
+        }
+
+        /* Emphasize key text */
+        .highlight {
+            color: #d91e18;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Add a banner-like section */
+        .banner {
+            background-image: url('concert-crowd-light.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            color: #333;
+            text-shadow: 1px 1px 4px #ccc;
+        }
+
+        /* Button styling */
+        .cta-button {
+            background-color: #d91e18;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #b51510;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <h1 class="container">3 Decades of Rock</h1>
+        <p class="highlight">Get ready to rock with Stage Fright!</p>
+    </div>
+
+    <div class="container">
+        <p>
+            For years, <span class="highlight">Stage Fright</span> has been setting the Los Angeles music scene ablaze with their unique blend of rock. Night after night, this dynamic four-member band leaves audiences stunned by the sheer intensity and passion of their live performances. 
+            Known for playing in iconic venues in <span class="highlight">Los Angeles, New York, Chicago, Dallas</span>, and more, <span class="highlight">Stage Fright</span> is quickly gaining a reputation as one of the must-see acts in rock music today.
+        </p>
+        <p>
+            Their explosive live shows bring to life a collection of powerful songs like <span class="highlight">"Night Drive", "Heartbreaker", "Break the Chains",</span> and <span class="highlight">"Lost in the Lights"</span> — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an unforgettable experience you can’t help but feel. 
+        </p>
+        <p>
+            If you crave that authentic, electrifying rock ‘n’ roll spirit, <span class="highlight">Stage Fright</span> delivers it with a force that keeps fans coming back for more.
+        </p>
+        
+        <!-- Call-to-action button -- work in progress -->
+        <a href="tour-dates.html" class="cta-button">See Tour Dates</a>
+    </div>
 </body>
 </html>
