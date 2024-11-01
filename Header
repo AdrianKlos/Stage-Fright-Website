@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Header image</title>
+  <title>Stage Fright</title>
 </head>
 <body>
   <img src="https://i.postimg.cc/SKsqZK5z/Stage-Freight-Banner.png" class="img-fluid" width="5000" alt="...">
@@ -101,4 +101,125 @@
         <a href="tour-dates.html" class="cta-button">See Tour Dates</a>
     </div>
 </body>
+
+<style>
+.parallax {
+  /* The image used */
+  background-image: url('https://imgur.com/X7qV5Q3.png');
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<!-- Parallax section -->
+<div class="parallax"></div>
+
+
+
+<div style="height:550px;background-color:#00296b;color:white;font-size:30px; padding: 20px">
+  Their explosive live shows bring to life a collection of powerful songs like "Night Drive," "Heartbreaker," "Break the Chains," and "Lost in the Lights" — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an extraordinarily memorable experience you can’t help but feel. If you crave that authentic, electrifying rock ‘n’ roll spirit, Stage Fright delivers it with a force that keeps fans coming back for more.
+</div>
+
+</body>
+<br>
+<br>
+<br>
+<style>
+#tours {
+  font-family: Sans-serif Typeface, Helvetica, Arial;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tours td, #tours th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tours tr:nth-child(even){background-color: #f2f2f2;}
+
+#tours tr:hover {background-color: #ddd;}
+
+#tours th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00008B;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Stage Fright: The Fearless Tour 2025</h1>
+
+<table id="tours">
+  <tr>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Venue</th>
+  </tr>
+  <tr>
+    <td>January 12, 2025</td>
+    <td>Chicago, IL</td>
+    <td>United Center</td>
+  </tr>
+  <tr>
+    <td>January 18, 2025</td>
+    <td>New York, NY</td>
+    <td>Madison Square Garden</td>
+  </tr>
+  <tr>
+    <td>January 25, 2025</td>
+    <td>Boston, MA</td>
+    <td>TD Garden</td>
+  </tr>
+  <tr>
+    <td>February 2, 2025</td>
+    <td>Atlanta, GA</td>
+    <td>State Farm Arena</td>
+  </tr>
+  <tr>
+    <td>February 9, 2025</td>
+    <td>Dallas, TX</td>
+    <td>American Airlines Center</td>
+  </tr>
+  <tr>
+    <td>February 15, 2025</td>
+    <td>Los Angeles, CA</td>
+    <td>The Forum</td>
+  </tr>
+  <tr>
+    <td>February 22, 2025</td>
+    <td>Seattle, WA</td>
+    <td>Climate Pledge Arena</td>
+  </tr>
+  <tr>
+    <td>March 1, 2025</td>
+    <td>Denver, CO</td>
+    <td>Ball Arena</td>
+  </tr>
+  <tr>
+    <td>March 8, 2025</td>
+    <td>Las Vegas, NV</td>
+    <td>T-Mobile Arena</td>
+  </tr>
+  <tr>
+    <td>March 15, 2025</td>
+    <td>Miami, FL</td>
+    <td>Kaseya Center</td>
+  </tr>
+</table>
+
+</body>
+
 </html>
