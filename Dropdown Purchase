@@ -28,6 +28,10 @@
             font-size: 1rem;
             display: flex;
             align-items: center;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .purchase-btn i {
@@ -66,6 +70,7 @@
     </style>
 </head>
 <body>
+  <br>
   <div style="text-align: center;">
 
     <h2>Upcoming Concerts</h2>
