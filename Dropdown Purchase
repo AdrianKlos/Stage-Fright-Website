@@ -28,6 +28,10 @@
             font-size: 1rem;
             display: flex;
             align-items: center;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .purchase-btn i {
@@ -66,10 +70,11 @@
     </style>
 </head>
 <body>
+  <br>
   <div style="text-align: center;">
 
     <h2>Upcoming Concerts</h2>
-    
+
     <ul style="list-style-type:none;">
       <li>January 12, 2025 | Chicago, IL: United Center </li>
       <hr>
@@ -169,7 +174,14 @@ function calculatePrice() {
     }
 }
 
-// Basic javascript, ADRIAN JINESH KLOS
+function confirmed() {
+
+alert("Purchase Confirmed");
+
+}
+
+
+// More Javascript
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
