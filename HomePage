@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Header image</title>
+</head>
+<body>
+  <img src="https://i.postimg.cc/SKsqZK5z/Stage-Freight-Banner.png" class="img-fluid" width="5000" alt="...">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f9f9f9;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main container styling */
+        .container {
+            text-align: center;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header styling */
+        h1 {
+            font-family: 'Impact', sans-serif;
+            font-size: 3em;
+            color: #d91e18;
+            margin: 0.2em 0;
+            text-shadow: 1px 1px #999;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+            color: #444;
+        }
+
+        /* Emphasize key text */
+        .highlight {
+            color: #d91e18;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Add a banner-like section */
+        .banner {
+            background-image: url('concert-crowd-light.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            color: #333;
+            text-shadow: 1px 1px 4px #ccc;
+        }
+
+        /* Button styling */
+        .cta-button {
+            background-color: #d91e18;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #b51510;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <h1 class="container">3 Decades of Rock</h1>
+        <p class="highlight">Get ready to rock with Stage Fright!</p>
+    </div>
+
+    <div class="container">
+        <p>
+            For years, <span class="highlight">Stage Fright</span> has been setting the Los Angeles music scene ablaze with their unique blend of rock. Night after night, this dynamic four-member band leaves audiences stunned by the sheer intensity and passion of their live performances. 
+            Known for playing in iconic venues in <span class="highlight">Los Angeles, New York, Chicago, Dallas</span>, and more, <span class="highlight">Stage Fright</span> is quickly gaining a reputation as one of the must-see acts in rock music today.
+        </p>
+        <p>
+            Their explosive live shows bring to life a collection of powerful songs like <span class="highlight">"Night Drive", "Heartbreaker", "Break the Chains",</span> and <span class="highlight">"Lost in the Lights"</span> — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an unforgettable experience you can’t help but feel. 
+        </p>
+        <p>
+            If you crave that authentic, electrifying rock ‘n’ roll spirit, <span class="highlight">Stage Fright</span> delivers it with a force that keeps fans coming back for more.
+        </p>
+        
+        <!-- Call-to-action button -- work in progress -->
+        <a href="tour-dates.html" class="cta-button">See Tour Dates</a>
+    </div>
+</body>
+
+<style>
+.parallax {
+  /* The image used */
+  background-image: url('https://imgur.com/X7qV5Q3.png');
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<!-- Parallax section -->
+<div class="parallax"></div>
+
+
+
+<div style="height:550px;background-color:#00296b;color:white;font-size:30px; padding: 20px">
+  Their explosive live shows bring to life a collection of powerful songs like "Night Drive," "Heartbreaker," "Break the Chains," and "Lost in the Lights" — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an extraordinarily memorable experience you can’t help but feel. If you crave that authentic, electrifying rock ‘n’ roll spirit, Stage Fright delivers it with a force that keeps fans coming back for more.
+</div>
+
+</body>
+<br>
+<br>
+<br>
+<style>
+#tours {
+  font-family: Sans-serif Typeface, Helvetica, Arial;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tours td, #tours th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tours tr:nth-child(even){background-color: #f2f2f2;}
+
+#tours tr:hover {background-color: #ddd;}
+
+#tours th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00008B;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Stage Fright: The Fearless Tour 2025</h1>
+
+<table id="tours">
+  <tr>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Venue</th>
+  </tr>
+  <tr>
+    <td>January 12, 2025</td>
+    <td>Chicago, IL</td>
+    <td>United Center</td>
+  </tr>
+  <tr>
+    <td>January 18, 2025</td>
+    <td>New York, NY</td>
+    <td>Madison Square Garden</td>
+  </tr>
+  <tr>
+    <td>January 25, 2025</td>
+    <td>Boston, MA</td>
+    <td>TD Garden</td>
+  </tr>
+  <tr>
+    <td>February 2, 2025</td>
+    <td>Atlanta, GA</td>
+    <td>State Farm Arena</td>
+  </tr>
+  <tr>
+    <td>February 9, 2025</td>
+    <td>Dallas, TX</td>
+    <td>American Airlines Center</td>
+  </tr>
+  <tr>
+    <td>February 15, 2025</td>
+    <td>Los Angeles, CA</td>
+    <td>The Forum</td>
+  </tr>
+  <tr>
+    <td>February 22, 2025</td>
+    <td>Seattle, WA</td>
+    <td>Climate Pledge Arena</td>
+  </tr>
+  <tr>
+    <td>March 1, 2025</td>
+    <td>Denver, CO</td>
+    <td>Ball Arena</td>
+  </tr>
+  <tr>
+    <td>March 8, 2025</td>
+    <td>Las Vegas, NV</td>
+    <td>T-Mobile Arena</td>
+  </tr>
+  <tr>
+    <td>March 15, 2025</td>
+    <td>Miami, FL</td>
+    <td>Kaseya Center</td>
+  </tr>
+</table>
+
+</body>
+<div class="p-3 mb-2 bg-transparent text-dark">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #ffffff">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-dark">Terms of Use</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-dark">Privacy Policy</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-dark">Advertise</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-dark">Ad Choice</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-dark">Accessibility Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Social -->
+      <section class="p-3 mb-2 bg-transparent text-dark">
+        <a href="" class="text-dark me-4">
+         <img src="https://i.postimg.cc/DZGkSpmx/twitter.png" alt="Twitter" width="30" height="30">
+        </a>
+        <a href="" class="text-dark me-4">
+          <img src="https://i.postimg.cc/VsTgGsG0/youtubelogo.png" alt="Youtube" width="35" height="30">
+         </a>
+         <a href="" class="text-dark me-4">
+          <img src="https://i.postimg.cc/7Y3B589C/spotify.png" alt="Spotify" width="30" height="30">
+         </a>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div
+         class="text-center p-3 text-dark"
+         style="background-color: rgba(255, 255, 255, 0.2)"
+         >
+      © 2024 Copyright:
+      <a class="text-dark" 
+         >Stage Fright</a
+        >
+    </div>
+  </footer>
+</div>
+</html>
