@@ -91,21 +91,21 @@
       <h2>In Stock</h2>
       <div class="product-list">
         <div class="product-item">
-          <img src="tshirt.jpg" alt="Black Tee">
+          <img src="https://i.postimg.cc/J7DBc2yJ/unnamed.png" alt="Black Tee">
           <h3>Classic Black T-Shirt</h3>
           <h4>(Adult Medium)</h4>
           <p>$25.00</p>
           <button onclick="addToCart('Classic Black Tee', 25)">Add to Cart</button>
         </div>
         <div class="product-item">
-          <img src="hoodie.jpg" alt="Black Hoodie">
+          <img src="https://i.postimg.cc/rF507RNw/unnamed-1.png" alt="Black Hoodie">
           <h3>Classic Black Hoodie</h3>
           <h4>(Adult Medium)</h4>
           <p>$45.00</p>
           <button onclick="addToCart('Classic Black Hoodie', 45)">Add to Cart</button>
         </div>
         <div class="product-item">
-          <img src="hat.jpg" alt="Hat">
+          <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
           <h3>Classic Black Hat</h3>
           <p>$15.00</p>
           <button onclick="addToCart('Classic Black Hat', 15)">Add to Cart</button>
@@ -138,7 +138,7 @@
           const itemEl = document.createElement("div");
           itemEl.textContent = `${item.name} - $${item.price.toFixed(2)}`;
           cartItems.appendChild(itemEl);
-          total += item.price;
+          total += item.price; 
         });
         document.getElementById("total-price").textContent = `Total: $${total.toFixed(2)}`;
       }
