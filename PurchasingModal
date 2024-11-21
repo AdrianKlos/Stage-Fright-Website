@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure HTML & CSS Modal</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal {
+      background: #fff;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .modal-header {
+      background: #135abd;
+      color: #fff;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .modal-body label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .modal-body input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px;
+      border-top: 1px solid #ddd;
+      background: #f8f8f8;
+    }
+
+    .modal-footer button {
+      padding: 8px 15px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .btn-primary {
+      background: #135abd;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #0d4a9a;
+    }
+
+    .btn-success {
+      background: #28a745;
+      color: #fff;
+    }
+
+    .btn-success:hover {
+      background: #218838;
+    }
+
+    /* Show Modal */
+    .modal-overlay.active {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        Reservation Details
+      </div>
+      <div class="modal-body">
+        <form id="reservationForm">
+          <label for="dateSelected">Selected Date</label>
+          <input type="text" id="dateSelected" readonly>
+
+          <label for="numPeople">Number of People</label>
+          <input type="number" id="numPeople" placeholder="Enter number of people" required>
+
+          <label for="estimatedPrice">Estimated Price</label>
+          <input type="text" id="estimatedPrice" readonly>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" onclick="calculatePrice()">Calculate Price</button>
+        <button class="btn-success" onclick="closeModal()">Confirm</button>
+      </div>
+    </div>
+  </div>
+  <button onclick="openModal()">Open Modal</button>
+
+  <script>
+    function openModal() {
+      document.getElementById('modalOverlay').classList.add('active');
+    }
+
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+
+
+    function calculatePrice() {
+      const numPeople = parseInt(document.getElementById('numPeople').value);
+      const pricePerPerson = 30;
+      const estimatedPrice = numPeople * pricePerPerson;
+
+      if (!isNaN(numPeople) && numPeople > 0) {
+        document.getElementById('estimatedPrice').value = `$${estimatedPrice.toFixed(2)}`;
+      } else {
+        document.getElementById('estimatedPrice').value = "Please enter a valid number.";
+      }
+    }
+  </script>
+</body>
+</html>
