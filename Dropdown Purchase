@@ -97,11 +97,11 @@
           </button>
           <div class="dropdown-menu" aria-labelledby="purchaseDropdown">
               <h6 class="dropdown-header">Dates:</h6>
-              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">January 12, 2025</a>
-              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">January 18, 2025</a>
-              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">January 25, 2025</a>
-              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">February 2, 2025</a>
-              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">February 9, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-ticketing?authuser=1">January 12, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-ticketing?authuser=1">January 18, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-ticketing?authuser=1">January 25, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-ticketing?authuser=1">February 2, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-ticketing?authuser=1">February 9, 2025</a>
           </div>
       </div>
   </div>
