@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pure HTML & CSS Modal</title>
+  <title>Price Calculator Modal</title>
   <style>
-    /* Base Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
-      color: #333;
+      color: #434242;
     }
 
     /* Modal Styles */
     .modal-overlay {
-      display: none; /* Hidden by default */
+      display: flex;
       position: fixed;
       top: 0;
       left: 0;
@@ -31,7 +30,9 @@
     .modal {
       background: #fff;
       width: 90%;
-      max-width: 500px;
+      height: 90%;
+      max-width: 1000px;
+      max-height: 380px;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -50,7 +51,7 @@
     }
 
     .modal-header {
-      background: #135abd;
+      background: #a41b03;
       color: #fff;
       padding: 15px;
       font-size: 18px;
@@ -93,7 +94,7 @@
     }
 
     .btn-primary {
-      background: #135abd;
+      background: #9b1509;
       color: #fff;
     }
 
@@ -102,21 +103,17 @@
     }
 
     .btn-success {
-      background: #28a745;
+      background: #1f9039;
       color: #fff;
     }
 
     .btn-success:hover {
       background: #218838;
     }
-
-    /* Show Modal */
-    .modal-overlay.active {
-      display: flex;
-    }
   </style>
 </head>
 <body>
+  <!-- Modal -->
   <div id="modalOverlay" class="modal-overlay">
     <div class="modal">
       <div class="modal-header">
@@ -124,45 +121,39 @@
       </div>
       <div class="modal-body">
         <form id="reservationForm">
-          <label for="dateSelected">Selected Date</label>
-          <input type="text" id="dateSelected" readonly>
-
           <label for="numPeople">Number of People</label>
-          <input type="number" id="numPeople" placeholder="Enter number of people" required>
+          <input type="number" id="numPeople" placeholder="Enter the number of people attending..." required>
 
           <label for="estimatedPrice">Estimated Price</label>
-          <input type="text" id="estimatedPrice" readonly>
+          <input type="text" id="estimatedPrice" placeholder="The estimated price will appear here..." readonly>
         </form>
       </div>
       <div class="modal-footer">
-        <button class="btn-primary" onclick="calculatePrice()">Calculate Price</button>
-        <button class="btn-success" onclick="closeModal()">Confirm</button>
-      </div>
+        <button class="btn-primary" onclick="calculatePrice()" style="margin-left: auto; margin-right: auto;">Calculate Price</button>
+        </div>
+        <div class="modal-footer">
+        <button class="btn-success" onclick="closeModal()" style="margin-left: auto; margin-right: auto;">Confirm</button>
+        </div>
     </div>
   </div>
-  <button onclick="openModal()">Open Modal</button>
 
   <script>
-    function openModal() {
-      document.getElementById('modalOverlay').classList.add('active');
-    }
-
-
-    function closeModal() {
-      document.getElementById('modalOverlay').classList.remove('active');
-    }
-
 
     function calculatePrice() {
-      const numPeople = parseInt(document.getElementById('numPeople').value);
-      const pricePerPerson = 30;
-      const estimatedPrice = numPeople * pricePerPerson;
+      const numPeople = parseInt(document.getElementById('numPeople').value); // Get input value
+      const pricePerPerson = 30; // Fixed price per person
+      const estimatedPriceField = document.getElementById('estimatedPrice'); // Output field
 
+      // Validate input and calculate the total price
       if (!isNaN(numPeople) && numPeople > 0) {
-        document.getElementById('estimatedPrice').value = `$${estimatedPrice.toFixed(2)}`;
+        const estimatedPrice = numPeople * pricePerPerson;
+        estimatedPriceField.value = `$${estimatedPrice.toFixed(2)}`; // Update the output field
       } else {
-        document.getElementById('estimatedPrice').value = "Please enter a valid number.";
+        estimatedPriceField.value = "Please enter a valid number."; // Handle invalid input
       }
+    }
+    function closeModal() {
+        window.location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets'; 
     }
   </script>
 </body>
