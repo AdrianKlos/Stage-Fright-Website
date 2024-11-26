@@ -30,7 +30,9 @@
     .modal {
       background: #fff;
       width: 90%;
-      max-width: 500px;
+      height: 90%;
+      max-width: 1000px;
+      max-height: 360px;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -127,9 +129,11 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button class="btn-primary" onclick="calculatePrice()">Calculate Price</button>
-        <button class="btn-success" onclick="closeModal()">Confirm</button>
-      </div>
+        <button class="btn-primary" onclick="calculatePrice()" style="margin-left: auto; margin-right: auto;">Calculate Price</button>
+        </div>
+        <div class="modal-footer">
+        <button class="btn-success" onclick="closeModal()" style="margin-left: auto; margin-right: auto;">Confirm</button>
+        </div>
     </div>
   </div>
 
