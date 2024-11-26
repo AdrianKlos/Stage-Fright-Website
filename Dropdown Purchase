@@ -92,16 +92,16 @@
     <!---- This is the dropdown menu button -->
     <div class="container mt-5">
       <div class="dropdown">
-          <button class="btn purchase-btn dropdown-toggle" type="button" id="purchaseDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1">
+          <button class="btn purchase-btn dropdown-toggle" type="button" id="purchaseDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-shopping-cart"></i> Purchase Options
           </button>
           <div class="dropdown-menu" aria-labelledby="purchaseDropdown">
               <h6 class="dropdown-header">Dates:</h6>
-              <a class="dropdown-item" href="#" onclick="openFormModal('January 12, 2025')">January 12, 2025</a>
-              <a class="dropdown-item" href="#" onclick="openFormModal('January 18, 2025')">January 18, 2025</a>
-              <a class="dropdown-item" href="#" onclick="openFormModal('January 25, 2025')">January 25, 2025</a>
-              <a class="dropdown-item" href="#" onclick="openFormModal('February 2, 2025')">February 2, 2025</a>
-              <a class="dropdown-item" href="#" onclick="openFormModal('February 9, 2025')">February 9, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">January 12, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">January 18, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">January 25, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">February 2, 2025</a>
+              <a class="dropdown-item" href="#" onclick="location.href = 'https://sites.google.com/students.d211.org/stagefright/purchase-tickets2?authuser=1';">February 9, 2025</a>
           </div>
       </div>
   </div>
