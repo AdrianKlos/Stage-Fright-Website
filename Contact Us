@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stage Fright</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .contact-section {
+        text-align: center;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 600px;
+      }
+
+      .band-logo {
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #222222;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: #555555;
+      }
+
+      .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #de2c14;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      .contact-button:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="contact-section">
+      <!-- Placeholder for Band Logo -->
+      <div class="logo-container">
+        <img src="logo-placeholder.png" alt="Stage Fright Logo" class="band-logo">
+      </div>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Reach out to us for bookings, customer service, or just to say hello.</p>
+      <div class="contact-links">
+        <a href="https://example.com/booking" target="_blank" class="contact-button">Booking</a>
+        <a href="https://example.com/email" class="contact-button">Email Us</a>
+        <a href="https://example.com/customerserveice" class="contact-button">Customer Service</a>
+      </div>
+    </section>
+  </body>
+</html>
