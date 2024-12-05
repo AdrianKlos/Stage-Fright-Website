@@ -9,8 +9,8 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: #f9f9f9;
-        color: #333333;
+        background: #121212;
+        color: #e0e0e0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,12 +19,13 @@
 
       .contact-section {
         text-align: center;
-        background: #ffffff;
+        background: #1e1e1e;
         padding: 40px;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         width: 80%;
         max-width: 600px;
+        border: 1px solid #333333;
       }
 
       .band-logo {
@@ -35,13 +36,13 @@
       h1 {
         font-size: 2rem;
         margin-bottom: 10px;
-        color: #222222;
+        color: #bb86fc;
       }
 
       p {
         font-size: 1rem;
         margin-bottom: 20px;
-        color: #555555;
+        color: #cccccc;
       }
 
       .contact-links {
@@ -53,23 +54,33 @@
       .contact-button {
         display: inline-block;
         padding: 10px 20px;
-        background: #de2c14;
+        background: #3700b3;
         color: white;
         text-decoration: none;
         font-size: 1rem;
         font-weight: bold;
         border-radius: 5px;
-        transition: background 0.3s;
+        transition: background 0.3s ease, transform 0.3s ease;
       }
 
       .contact-button:hover {
-        background: #0056b3;
+        background: #bb86fc;
+        transform: scale(1.05);
+      }
+
+      a {
+        color: #bb86fc;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #3700b3;
       }
     </style>
   </head>
   <body>
     <section class="contact-section">
-      <!-- Placeholder for Band Logo -->
+      <!-- Band Logo -->
       <div class="logo-container">
         <img src="https://i.postimg.cc/nVN7b7c1/Screenshot-2024-11-14-175006-removebg-preview.png" alt="Stage Fright Logo" class="band-logo">
       </div>
@@ -78,7 +89,7 @@
       <div class="contact-links">
         <a href="https://example.com/booking" target="_blank" class="contact-button">Booking</a>
         <a href="https://example.com/email" class="contact-button">Email Us</a>
-        <a href="https://example.com/customerserveice" class="contact-button">Customer Service</a>
+        <a href="https://example.com/customerservice" class="contact-button">Customer Service</a>
       </div>
     </section>
   </body>
