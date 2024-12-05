@@ -230,22 +230,53 @@
         <div class="product-item">
             <img src="https://i.postimg.cc/J7DBc2yJ/unnamed.png" alt="Black Tee">
             <h3>Classic Black T-Shirt</h3>
-            <h4>(Adult Medium)</h4>
-            <p>$25.00</p>
-            <button onclick="addToCart('Classic Black Tee', 25)">Add to Cart</button>
+              <label for="size" style="color: white;">Size:</label>
+  <select name="size" id="size">
+    <option value="small">S</option>
+    <option value="medium">M</option>
+    <option value="large">L</option>
+    <option value="extra large">XL</option>
+  </select>
+            <p>$24.99</p>
+            <button onclick="addToCart('Classic Black Tee', 24.99)">Add to Cart</button>
         </div>
         <div class="product-item">
             <img src="https://i.postimg.cc/rF507RNw/unnamed-1.png" alt="Black Hoodie">
             <h3>Classic Black Hoodie</h3>
             <h4>(Adult Medium)</h4>
-            <p>$45.00</p>
-            <button onclick="addToCart('Classic Black Hoodie', 45)">Add to Cart</button>
+            <p>$44.99</p>
+            <button onclick="addToCart('Classic Black Hoodie', 44.99)">Add to Cart</button>
         </div>
         <div class="product-item">
             <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
             <h3>Classic Black Hat</h3>
-            <p>$15.00</p>
-            <button onclick="addToCart('Classic Black Hat', 15)">Add to Cart</button>
+            <p>$14.99</p>
+            <button onclick="addToCart('Classic Black Hat', 14.99)">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
+            <h3>Classic Black Bandana</h3>
+            <p>$9.99</p>
+            <button onclick="addToCart('Classic Black Bandana', 9.99)">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
+            <h3>Ceramic Black Mug</h3>
+            <p>$9.99</p>
+            <button onclick="addToCart('Ceramic Black Mug', 9.99)">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
+            <h3>Stage Fright Wall Poster</h3>
+            <p>$19.99</p>
+            <button onclick="addToCart('Stage Fright Wall Poster', 19.99)">Add to Cart</button>
+        </div>
+                <div class="product-item">
+            <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
+            <h3>Stage Fright Logo Stickers</h3>
+            <h4>Quantity: 25</h4>
+            <p>$2.99</p>
+            <button onclick="addToCart('Stage Fright Logo Sticker', 2.99)">Add to Cart</button>
         </div>
     </div>
 </section>
