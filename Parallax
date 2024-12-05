@@ -1,0 +1,30 @@
+<html>
+<style>
+.parallax {
+  /* The image used */
+  background-image: url('https://imgur.com/X7qV5Q3.png');
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<!-- Parallax section -->
+<div class="parallax"></div>
+
+
+
+<div style="height:150px;background-color:#00296b;color:white;font-size:30px; padding: 20px">
+  Look at the energy on that stage. Don’t just watch it, <b>LIVE IT</b>. Stage Fright delivers a rock experience that’s pure adrenaline. <b>JOIN</b> the crowd, <b>FEEL</b> the magic, and make tonight unforgettable.
+</div>
+
+</body>
+</html>
