@@ -268,8 +268,8 @@
         <div class="product-item">
             <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
             <h3>Ceramic Black Mug</h3>
-            <p>$9.99</p>
-            <button onclick="addToCart('Ceramic Black Mug', 9.99)">Add to Cart</button>
+            <p>$14.99</p>
+            <button onclick="addToCart('Ceramic Black Mug', 14.99)">Add to Cart</button>
         </div>
         <div class="product-item">
             <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
