@@ -243,7 +243,13 @@
         <div class="product-item">
             <img src="https://i.postimg.cc/rF507RNw/unnamed-1.png" alt="Black Hoodie">
             <h3>Classic Black Hoodie</h3>
-            <h4>(Adult Medium)</h4>
+              <label for="size" style="color: white;">Size:</label>
+  <select name="size" id="size">
+    <option value="small">S</option>
+    <option value="medium">M</option>
+    <option value="large">L</option>
+    <option value="extra large">XL</option>
+  </select>
             <p>$44.99</p>
             <button onclick="addToCart('Classic Black Hoodie', 44.99)">Add to Cart</button>
         </div>
