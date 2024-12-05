@@ -117,16 +117,14 @@
   background-size: cover;
 }
 </style>
-</head>
 <body>
 
 <!-- Parallax section -->
 <div class="parallax"></div>
 
 
-
-<div style="height:550px;background-color:#00296b;color:white;font-size:30px; padding: 20px">
-  Their explosive live shows bring to life a collection of powerful songs like "Night Drive," "Heartbreaker," "Break the Chains," and "Lost in the Lights" — songs that have become instant crowd favorites with unforgettable hooks and driving riffs. Every note from the guitar, every beat from the drums, and every soaring vocal sends shockwaves through the crowd, making their concerts an extraordinarily memorable experience you can’t help but feel. If you crave that authentic, electrifying rock ‘n’ roll spirit, Stage Fright delivers it with a force that keeps fans coming back for more.
+<div style="height:150px;background-color:#00296b;color:white;font-size:30px; padding: 20px">
+  Look at the energy on that stage. Don’t just watch it, <b>LIVE IT</b>. Stage Fright delivers a rock experience that’s pure adrenaline. <b>JOIN</b> the crowd, <b>FEEL</b> the magic, and make tonight unforgettable.
 </div>
 
 </body>
