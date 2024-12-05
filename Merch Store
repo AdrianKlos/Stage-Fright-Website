@@ -1,164 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Fright Official Merch</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        text-align: center;
-        padding: 1rem;
-        background-color: #f0f0f0;
-        border-bottom: 2px solid #d1d1d1;
-      }
-
-      h1 {
-        color: #e63946;
-      }
-      
-      #products {
-        padding: 2rem;
-        text-align: center;
-      }
-
-      .product-list {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-
-      .product-item {
-        background-color: #fff;
-        padding: 1rem;
-        border-radius: 8px;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid #ddd;
-      }
-
-      .product-item img {
-        width: 100%;
-        border-radius: 8px;
-      }
-
-      button {
-        background-color: #e63946;
-        color: #fff;
-        border: none;
-        padding: 0.5rem;
-        cursor: pointer;
-        margin-top: 0.5rem;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-
-      button:hover {
-        background-color: #d62828;
-      }
-
-      #cart {
-        background-color: #f0f0f0;
-        padding: 1rem;
-        text-align: center;
-      }
-
-      #cart-items {
-        padding: 1rem;
-      }
-
-      #total-price {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-        color: #0077b6;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Stage Fright Official Merch</h1>
-      <p>Face the Fright. Wear the Fright. Be the Fright.</p>
-    </header>
-    <section id="products">
-      <h2>In Stock</h2>
-      <div class="product-list">
-        <div class="product-item">
-          <img src="https://i.postimg.cc/J7DBc2yJ/unnamed.png" alt="Black Tee">
-          <h3>Classic Black T-Shirt</h3>
-          <h4>(Adult Medium)</h4>
-          <p>$25.00</p>
-          <button onclick="addToCart('Classic Black Tee', 25)">Add to Cart</button>
-        </div>
-        <div class="product-item">
-          <img src="https://i.postimg.cc/rF507RNw/unnamed-1.png" alt="Black Hoodie">
-          <h3>Classic Black Hoodie</h3>
-          <h4>(Adult Medium)</h4>
-          <p>$45.00</p>
-          <button onclick="addToCart('Classic Black Hoodie', 45)">Add to Cart</button>
-        </div>
-        <div class="product-item">
-          <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
-          <h3>Classic Black Hat</h3>
-          <p>$15.00</p>
-          <button onclick="addToCart('Classic Black Hat', 15)">Add to Cart</button>
-        </div>
-      </div>
-    </section>
-    <section id="cart">
-      <h2>Shopping Cart</h2>
-      <div id="cart-items"></div>
-      <p id="total-price">Total: $0.00</p>
-      <button onclick="checkout()">Checkout</button>
-    </section>
-    <script>
-      let cart = [];
-
-      function addToCart(name, price) {
-        const item = {
-          name,
-          price
-        };
-        cart.push(item);
-        displayCart();
-      }
-
-      function displayCart() {
-        const cartItems = document.getElementById("cart-items");
-        cartItems.innerHTML = "";
-        let total = 0;
-        cart.forEach((item, index) => {
-          const itemEl = document.createElement("div");
-          itemEl.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-          cartItems.appendChild(itemEl);
-          total += item.price; 
-        });
-        document.getElementById("total-price").textContent = `Total: $${total.toFixed(2)}`;
-      }
-
-      function checkout() {
-      
-      	if (cart.length==0) {
-        
-        	alert("Please purchase at least one item before checking out.");
-            
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(244, 244, 249, 0.5); /* Adjusted to be translucent */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-image: url("https://i.postimg.cc/ncMfrWDS/Screenshot-2024-11-14-170543.png");
+            image-rendering: high-quality;
+            background-blend-mode: darken;
         }
-        
-        else {
-        
-        	alert("Thank you for your purchase!");
-        	cart = [];
-        	displayCart();
-       }     
-       
-      }
+
+        header {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #d1d1d1;
+        }
+
+        h1 {
+            color: #e63946;
+            font-size: 35px;
+            opacity: 1;
+        }
+
+        h2{
+            font-family: Arial, sans-serif;
+        }
+
+        h3{
+            color: #f4f4f4;
+            background-color: #161616;
+            font-size: 20px;
+            opacity: 1;
+        }
+
+        h4{
+            color: #f4f4f4;
+            font-size: 20px;
+            background-color: #161616;
+            opacity: 1;
+        }
+
+        p{
+            color: #f4f4f4;
+            font-size: 20px;
+            opacity: 1;
+        }
+
+        #products {
+            padding: 2rem;
+            text-align: center;
+            background-color: rgb(0 0 0 / 0.5);
+            color: #fff;
+
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            background-color: #191818;
+            padding: 1rem;
+            color: #d1d1d1;
+            border-radius: 8px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ffffff;
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 8px;
+            image-rendering: high-quality;
+        }
+
+        button {
+            background-color: #e63946;
+            color: #fff;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            opacity: 1;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #d62828;
+        }
+
+        #cart {
+            padding: 1rem;
+            text-align: center;
+            background-color: rgb(0 0 0 / 0.5);
+            color: #fff;
+        }
+
+        #cart-items {
+            padding: 1rem;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        #total-price {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #048ad1;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .modal-overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            background: #fff;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /*Payment Modal*/
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal {
+            background: white;
+            width: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            background: #a1060e;
+            color: white;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .close-button {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 16px;
+            color: black
+        }
+
+        .payment-method {
+            margin-bottom: 12px;
+            font-size: 1rem;
+
+        }
+
+        .payment-method label {
+            cursor: pointer;
+        }
+
+        .modal-footer {
+            padding: 16px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            background: #f1f1f1;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-secondary {
+            background: #ccc;
+            color: black;
+        }
+
+        .btn-primary {
+            background: #099116;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Stage Fright Official Merch</h1>
+    <p style="color: black;">Face the Fright. Wear the Fright. Be the Fright.</p>
+</header>
+<section id="products">
+    <h1>In Stock</h1>
+    <div class="product-list">
+        <div class="product-item">
+            <img src="https://i.postimg.cc/J7DBc2yJ/unnamed.png" alt="Black Tee">
+            <h3>Classic Black T-Shirt</h3>
+            <h4>(Adult Medium)</h4>
+            <p>$25.00</p>
+            <button onclick="addToCart('Classic Black Tee', 25)">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://i.postimg.cc/rF507RNw/unnamed-1.png" alt="Black Hoodie">
+            <h3>Classic Black Hoodie</h3>
+            <h4>(Adult Medium)</h4>
+            <p>$45.00</p>
+            <button onclick="addToCart('Classic Black Hoodie', 45)">Add to Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
+            <h3>Classic Black Hat</h3>
+            <p>$15.00</p>
+            <button onclick="addToCart('Classic Black Hat', 15)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<section id="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <p id="total-price">Total: $0.00</p>
+    <div id="errormsg"></div>
+    <button id="check-out" onclick="checkout()">Checkout</button>
+    <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+</section>
+
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal" onclick="e.stopPropagation()">
+        <div class="modal-header">
+            <svg id='Credit_Card_32' width='38' height='38' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='32' height='32' stroke='none' fill='#000000' opacity='0'/>
+                <g transform="matrix(0.58 0 0 0.58 16 16)" >
+                    <g style="" >
+                        <g transform="matrix(1 0 0 1 0 0)" >
+                            <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(100,181,246); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -24)" d="M 45 35 C 45 37.208 43.209 39 41 39 L 7 39 C 4.791 39 3 37.208 3 35 L 3 13 C 3 10.79 4.791 9 7 9 L 41 9 C 43.209 9 45 10.79 45 13 L 45 35 z" stroke-linecap="round" />
+                        </g>
+                        <g transform="matrix(1 0 0 1 0 -7)" >
+                            <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(55,71,79); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -17)" d="M 3 14 L 45 14 L 45 20 L 3 20 z" stroke-linecap="round" />
+                        </g>
+                        <g transform="matrix(1 0 0 1 0 0.5)" >
+                            <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(227,242,253); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -24.5)" d="M 5 22 L 43 22 L 43 27 L 5 27 z" stroke-linecap="round" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h2>Choose a Payment Method</h2>
+            <button class="close-button" onclick="closeModal()">✖</button>
+        </div>
+        <div class="modal-body">
+            <form id="paymentForm">
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="creditCard" required>
+                        Credit Card
+                    </label>
+                </div>
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="paypal">
+                        PayPal
+                    </label>
+                </div>
+                <div class="payment-method">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="applePay">
+
+                        Apple Pay
+
+                    </label>
+                </div>
+                <div id="paymentDetails" class="payment-details">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            <button class="btn btn-primary" onclick="confirmPayment()">Confirm Payment</button>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        const modal = document.getElementById("modalOverlay");
+
+        window.onload = function() {
+            modal.style.display = "none";
+        }
+
+        let cart = [];
+
+        function clearCart() {
+            cart = [];
+            displayCart();
+        }
+
+        function addToCart(name, price) {
+            const item = {
+                name,
+                price
+            };
+            cart.push(item);
+            displayCart();
+        }
+
+        function displayCart() {
+            const cartItems = document.getElementById("cart-items");
+            cartItems.innerHTML = "";
+            let total = 0;
+            cart.forEach((item, index) => {
+                const itemEl = document.createElement("div");
+                itemEl.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItems.appendChild(itemEl);
+                total += item.price;
+            });
+            document.getElementById("total-price").textContent = `Total: $${total.toFixed(2)}`;
+        }
+
+        function checkout() {
+
+            if (cart.length==0) {
+
+                document.getElementById("check-out").innerHTML = "No Items in Cart";
+            }
+
+            else {
+
+                cart = [];
+                modal.style.display = "flex";
+                document.getElementById("check-out").innerHTML = "Checkout";
+                displayCart();
+            }
+
+        }
+
+        function closeModal(){
+            modal.style.display = "none";
+        }
+
+        function confirmPayment() {
+            const selectedMethod = document.querySelector('input[name="paymentMethod"]:checked');
+            if (!selectedMethod) {
+                alert("Please select a payment method.");
+                return;
+            }
+            alert(`Thank you for purchasing!`);
+            closeModal();
+        }
     </script>
-  </body>
+</body>
 </html>
