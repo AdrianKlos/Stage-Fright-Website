@@ -1,149 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
 
-        header {
-            background: #c42121;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
+      h1,
+      h2,
+      h3 {
+        color: #bb86fc;
+      }
 
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
+      p,
+      a {
+        color: #e0e0e0;
+      }
 
-        .container {
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-        }
+      a {
+        text-decoration: none;
+      }
 
-        .history {
-            margin: 20px 0;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+      a:hover {
+        color: #3700b3;
+      }
 
-        .history h2 {
-            margin-top: 0;
-            color: #c42121;
-        }
+      /* Header Styles */
+      header {
+        background: #1e1e1e;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 3px solid #bb86fc;
+      }
 
-        .band-member {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-            background: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+      header h1 {
+        margin: 0;
+        font-size: 3rem;
+      }
 
-        .band-member img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px;
-            border: 3px solid #c42121;
-        }
+      /* Container */
+      .container {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+      }
 
-        .band-member-info {
-            flex: 1;
-        }
+      /* History Section */
+      .history {
+        margin: 20px 0;
+        padding: 20px;
+        background: #1e1e1e;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
 
-        .band-member-info h3 {
-            margin: 0;
-            color: #c42121;
-        }
+      .history h2 {
+        text-align: center;
+        margin-top: 0;
+      }
 
-        .footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #f1f1f1;
-            color: #555;
-            margin-top: 20px;
-            border-top: 1px solid #ddd;
-        }
+      /* Band Member Section */
+      .band-member {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
 
+      .band-member img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 20px;
+        border: 3px solid #bb86fc;
+      }
 
-        .footer a {
-            color: #c42121;
-            text-decoration: none;
-        }
+      .band-member-info h3 {
+        margin: 0;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 15px 0;
+        background: #1e1e1e;
+        border-top: 3px solid #bb86fc;
+        margin-top: 20px;
+      }
+
+      .footer a {
+        color: #bb86fc;
+      }
+
+      .footer a:hover {
+        color: #e0e0e0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header Section -->
     <header>
-        <h1>About the Band</h1>
+      <h1>About the Band</h1>
     </header>
-
+    <!-- Main Content -->
     <div class="container">
-        <section class="history">
-            <h2 style="text-align: center;">Band History</h2>
+      <!-- History Section -->
+      <section class="history">
+        <h2>Band History</h2>
+        <p> Stage Fright was formed when lead singer <b>Jadyn Mallory</b> and lead guitarist <b>Brady Miles</b> met at a Seattle music festival, bonding over their mutual love for gritty, emotional rock. Jaiden, a Portland native with indie roots and a degree in music theory, brought his raw vocal power and songwriting skills, while Brady, a surf-rock keyboardist from Huntington Beach, added captivating beats. They soon expanded, recruiting bassist <b>Juno Vargas</b>, a San Diego native with a jazz background and a talent for the bass guitar. <b>Seth Callahan</b>, previously friends with Juno, joined as the drummer. Together, they fused their diverse talents to create the powerful, emotional sound of Stage Fright. </p>
+      </section>
+      <!-- Band Members Section -->
+      <section class="members">
+        <div class="band-member">
+          <img src="https://i.postimg.cc/wM9CLf73/Screenshot-2024-11-21-5-18-12-PM.png" alt="Jaiden Mallory">
+          <div class="band-member-info">
+            <h3>Jaiden “Ace” Mallory</h3>
             <p>
-                Stage Fright was formed when lead singer <b>Jadyn Mallory</b> and lead guitarist <b>Brady Miles</b> met at a Seattle music festival, bonding over their mutual love for gritty, emotional rock. Jaiden, a Portland native with indie roots and a degree in music theory, brought his raw vocal power and songwriting skills, while Brady, a surf-rock keyboardist from Huntington Beach, added captivating beats. They soon expanded, recruiting bassist <b>Juno Vargas</b>, a San Diego native with a jazz background and a talent for the bass guitar. <b>Seth Callahan</b> was previously friends with Juno who came and asked to join the band as a drummer. Together, the four of them fused their variety of talents to create the powerful, emotional sound of Stage Fright.
+              <strong>Position:</strong> Lead Singer and Lead Guitarist
             </p>
-        </section>
-
-        <section class="members">
-            <div class="band-member">
-                <img src="https://i.postimg.cc/wM9CLf73/Screenshot-2024-11-21-5-18-12-PM.png" alt="Member 1 Photo">
-                <div class="band-member-info">
-                    <h3>Jaiden “Ace” Mallory </h3>
-                    <p><strong>Position:</strong> Lead Singer and Lead Guitarist</p>
-                    <p>Jaiden “Ace” Mallory came from Portland, Oregon, where he was raised by a family of indie musicians. His unique voice and stage presence developed from years of performing at local open mic nights, where he blended his love for rock with influences from her parents' eclectic music collection. After earning a degree in music theory from the University of Washington, Jadyn pursued songwriting and performing, eventually crossing paths with Brady during a Seattle music festival. The two quickly bonded over their shared passion for gritty, emotional rock and soon formed Stage Fright.</p>
-                </div>
-            </div>
-
-            <div class="band-member">
-                <img src="https://i.postimg.cc/FHY2yJsb/Screenshot-2024-11-21-5-21-44-PM.png" alt="Member 2 Photo">
-                <div class="band-member-info">
-                    <h3>Brady “Chad” Miles</h3>
-                    <p><strong>Position:</strong> Keyboardist</p>
-                    <p>Brady Miles, known by his stage name "Chad," grew up in the surf culture of Huntington Beach, California. He started playing the keyboard at age 10, influenced by the classic rock records his dad would play, and soon became known for his technical skill and fast riffs. After high school, Brady attended the Musicians Institute in Los Angeles, where he improved his skill and played with several local bands. It was at a Seattle music festival where he met Jadyn, and the two hit it off instantly, sharing a love for gritty, emotional rock. Soon after, they decided to start Stage Fright, blending Brady's electrifying solos with Jadyn’s voice. Soon, friends of friends would join, growing their band to four members.</p>
-                </div>
-            </div>
-
-            <div class="band-member">
-                <img src="https://i.postimg.cc/TwJSdVCx/Screenshot-2024-11-21-5-25-04-PM.png" alt="Member 3 Photo">
-                <div class="band-member-info">
-                    <h3>Juno “Bassline” Vargas</h3>
-                    <p><strong>Position:</strong> Bass Guitar</p>
-                    <p>Juno Vargas grew up in a vibrant “music-infused” neighborhood located in San Diego. His father was a local jazz musician and mother was a visual artist. After high school Juno studied music production and sound engineering at the “University of Michigan” and played gigs across his hometown. Later in his career he met up with Seth Callahan and became close friends with him, making music day and night until they decided to join one of Callahan’s friends in a rock band, which would eventually be named Stage Fright.</p>
-                </div>
-            </div>
-
-            <div class="band-member">
-                <img src="https://i.postimg.cc/d04rJDrX/Screenshot-2024-11-21-5-26-24-PM.png" alt="Member 4 Photo">
-                <div class="band-member-info">
-                    <h3>Seth "Bones" Callahan</h3>
-                    <p><strong>Position:</strong> Drummer</p>
-                    <p>Seth Callahan, known by his stage name "Bones" for the way his limbs seem to move like they’re made of pure rhythm, grew up in the small, decaying town of Vale Haven. His father was a coal miner, his mother a quiet, spiritual woman who played classical piano. Music was always in the air, but it wasn’t until Seth found an old drum kit in the basement of a neighbor’s house that his passion for rhythm really ignited. His parents weren’t thrilled with the idea of him pursuing music, but Seth felt something in the beats that he couldn't shake.</p>
-                </div>
-            </div>
-        </section>
+            <p>Jaiden “Ace” Mallory came from Portland, Oregon, where he was raised by a family of indie musicians. His unique voice and stage presence developed from years of performing at local open mic nights, blending his love for rock with influences from his parents' eclectic music collection. After earning a degree in music theory from the University of Washington, Jaiden pursued songwriting and performing, eventually crossing paths with Brady during a Seattle music festival. The two quickly bonded and formed Stage Fright.</p>
+          </div>
+        </div>
+        <div class="band-member">
+          <img src="https://i.postimg.cc/FHY2yJsb/Screenshot-2024-11-21-5-21-44-PM.png" alt="Brady Miles">
+          <div class="band-member-info">
+            <h3>Brady “Chad” Miles</h3>
+            <p>
+              <strong>Position:</strong> Keyboardist
+            </p>
+            <p>Brady Miles, known as "Chad," grew up in Huntington Beach, California. Starting at age 10, he developed his skills playing classic rock. After attending the Musicians Institute in Los Angeles, Brady’s electrifying solos became a hallmark of Stage Fright’s sound.</p>
+          </div>
+        </div>
+        <div class="band-member">
+          <img src="https://i.postimg.cc/TwJSdVCx/Screenshot-2024-11-21-5-25-04-PM.png" alt="Juno Vargas">
+          <div class="band-member-info">
+            <h3>Juno “Bassline” Vargas</h3>
+            <p>
+              <strong>Position:</strong> Bass Guitar
+            </p>
+            <p>Hailing from San Diego, Juno Vargas was inspired by his jazz musician father and artist mother. After studying music production at the University of Michigan, Juno joined Stage Fright, bringing deep grooves and technical mastery to the band.</p>
+          </div>
+        </div>
+        <div class="band-member">
+          <img src="https://i.postimg.cc/d04rJDrX/Screenshot-2024-11-21-5-26-24-PM.png" alt="Seth Callahan">
+          <div class="band-member-info">
+            <h3>Seth "Bones" Callahan</h3>
+            <p>
+              <strong>Position:</strong> Drummer
+            </p>
+            <p>Seth Callahan grew up in the small town of Vale Haven. His passion for rhythm started with an old drum kit and grew into a lifelong obsession. Known for his energetic style, Seth is the heartbeat of Stage Fright.</p>
+          </div>
+        </div>
+      </section>
     </div>
-
+    <!-- Footer -->
     <footer class="footer">
-        <p>Follow us on <a href="#">Social Media</a> | © 2024 Stage Fright</p>
+      <p>Follow us on <a href="#">Social Media</a> | © 2024 Stage Fright </p>
     </footer>
-</body>
+  </body>
 </html>
