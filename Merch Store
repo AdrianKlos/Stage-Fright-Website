@@ -260,27 +260,27 @@
             <button onclick="addToCart('Classic Black Hat', 14.99)">Add to Cart</button>
         </div>
         <div class="product-item">
-            <img src="https://i.postimg.cc/bw8DPYmH/unnamed-2.png" alt="Black Hat">
+            <img src="https://i.postimg.cc/VNc6CFJd/other-design.png" alt="Black Bandana">
             <h3>Classic Black Bandana</h3>
             <p>$9.99</p>
             <button onclick="addToCart('Classic Black Bandana', 9.99)">Add to Cart</button>
         </div>
         <div class="product-item">
-            <img src="https://i.postimg.cc/KcBwPM0d/Mug.png" alt="Black Hat">
+            <img src="https://i.postimg.cc/KcBwPM0d/Mug.png" alt="Black Mug">
             <h3>Ceramic Black Mug</h3>
             <p>$14.99</p>
             <button onclick="addToCart('Ceramic Black Mug', 14.99)">Add to Cart</button>
         </div>
         <div class="product-item">
-            <img src="https://i.postimg.cc/Fsx6qQ5p/Poster.png" alt="Black Hat">
+            <img src="https://i.postimg.cc/Fsx6qQ5p/Poster.png" alt="Wall Poster">
             <h3>Stage Fright Wall Poster</h3>
             <p>$19.99</p>
             <button onclick="addToCart('Stage Fright Wall Poster', 19.99)">Add to Cart</button>
         </div>
                 <div class="product-item">
-            <img src="https://i.postimg.cc/fycPDG3w/black-sticker.png" alt="Black Hat">
+            <img src="https://i.postimg.cc/fycPDG3w/black-sticker.png" alt="Sticker">
             <h3>Stage Fright Logo Stickers</h3>
-            <h4>Quantity: 25</h4>
+            <h4>Quantity: 30</h4>
             <p>$2.99</p>
             <button onclick="addToCart('Stage Fright Logo Sticker', 2.99)">Add to Cart</button>
         </div>
